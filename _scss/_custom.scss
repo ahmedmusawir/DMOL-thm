@@ -19,6 +19,8 @@ html {
 
 body {
 
+	position: relative;
+
 	font-family: 'Raleway', sans-serif;
 	padding-top: 62px;
 
@@ -40,6 +42,26 @@ body {
 
 }
 
+#app {
+
+	// border: 1rem solid red;
+	.fade-enter-active, .fade-leave-active {
+	  transition: opacity 3s ease-in-out;
+	}
+	.fade-enter, .fade-leave-active {
+	  opacity: 0
+	}	
+
+	.slide-enter-active, .slide-leave-active {
+	  transition: all 3s ease-in-out;
+	}
+	.slide-enter, .slide-leave-active {
+	  opacity: 0;
+	  margin-top: 500px; 
+	}		
+}
+
+
 #content {
 
 	font-family: 'Raleway', sans-serif;
@@ -50,7 +72,7 @@ body {
 	  -o-background-size: cover;
 	  background-size: cover;
 
-	display: none;
+	// display: none;
 }
 
 /**
@@ -128,7 +150,8 @@ body {
 
 		.logo {
 			
-			margin-top: -3rem;
+			margin-top: -3.1rem;
+			// width: 35%;
 		}
 	}
 	.navbar-toggle {

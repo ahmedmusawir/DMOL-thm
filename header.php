@@ -54,7 +54,8 @@
 			            <span class="icon-bar"></span>
 			        </button>
 			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><img class="logo img-responsive" src="<?php echo $siteLogo; ?>" alt=""></span> </a>
-			    <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><img class="logo" src="/wp-content/uploads/2016/06/TyloreCLogoFinal-200.png" alt=""></span> </a> -->
+			    <!-- <img class="img-responsive" src="http://dmol.local/wp-content/uploads/2015/12/DMOL-Profile-Pic.jpg" alt=""> -->
+			    <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><img class="logo img-responsive img-circle" src="/wp-content/uploads/2015/12/DMOL-Profile-Pic.jpg" alt=""></span> </a> -->
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,7 +75,7 @@
 				            'theme_location' => 'primary',
 				            'depth' => 2,
 				            'container' => false,
-				            'menu_class' => 'nav navbar-nav navbar-right',
+				            'menu_class' => 'nav navbar-nav navbar-left',
 				            'fallback_cb' => 'wp_page_menu',
 				            //Process nav menu using our custom nav walker
 				            'walker' => new wp_bootstrap_navwalker())

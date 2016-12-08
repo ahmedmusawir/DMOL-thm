@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: MooseFrame For Dr. Ina
+Theme Name: MooseFrame For DMOL
 Theme URI: http://www.htmlfivedev.com
 Description: This is the one built from scratch by TianaGustafson.com
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, responsive-layout, theme-options, translation-ready
@@ -5921,6 +5921,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
+  position: relative;
   font-family: 'Raleway', sans-serif;
   padding-top: 62px; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -5935,14 +5936,23 @@ body {
     body {
       padding-top: 65px; } }
 
+#app .fade-enter-active, #app .fade-leave-active {
+  transition: opacity 3s ease-in-out; }
+#app .fade-enter, #app .fade-leave-active {
+  opacity: 0; }
+#app .slide-enter-active, #app .slide-leave-active {
+  transition: all 3s ease-in-out; }
+#app .slide-enter, #app .slide-leave-active {
+  opacity: 0;
+  margin-top: 500px; }
+
 #content {
   font-family: 'Raleway', sans-serif;
   background: url() no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  display: none; }
+  background-size: cover; }
 
 /**
  *
@@ -5992,7 +6002,7 @@ body {
   .navbar .navbar-brand {
     color: #d5d5d5; }
     .navbar .navbar-brand .logo {
-      margin-top: -3rem; }
+      margin-top: -3.1rem; }
   .navbar .navbar-toggle {
     border: 3px solid #f79db3; }
     .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {

@@ -233,11 +233,11 @@ require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 
 // Replaces the excerpt "more" text by a link
-// function new_excerpt_more($more) {
-//        global $post;
-// 	return '<a class="moretag btn btn-success" href="'. get_permalink($post->ID) . '"> Read the full article...</a>';
-// }
-// add_filter('excerpt_more', 'new_excerpt_more');
+function new_excerpt_more($more) {
+       global $post;
+	return '<a class="moretag btn btn-success" href="'. get_permalink($post->ID) . '"> Read the full article...</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 
 // Remove Comments from Jetpack Carousel 
@@ -284,31 +284,6 @@ function my_menu_atts( $atts, $item, $args )
 
 */
 
-/*========================================
-=            PREPARE REST API            =
-========================================*/
-
-function prepare_rest( $data, $post, $request ) {
-
-	$_data = $data->data;
-
-	$thumbnail_id = get_post_thumbnail_id( $post->ID );
-	$thumbnail_img = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail' );
-	$medium_img = wp_get_attachment_image_src( $thumbnail_id, 'medium' );
-	$full_img = wp_get_attachment_image_src( $thumbnail_id, 'full' );
-
-	$_data['featured_thumb'] = $thumbnail_img[0];
-	$_data['featured_medium'] = $medium_img[0];
-	$_data['featured_full'] = $full_img[0];
-	
-	$data->data = $_data;
-
-	return $data;
-}
-
-add_filter('rest_prepare_post', 'prepare_rest', 10, 3 );
-
-/*=====  End of PREPARE REST API  ======*/
 
 
 

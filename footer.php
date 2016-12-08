@@ -15,7 +15,7 @@
 
 		<div class="footer-container">
 
-			<footer id="footer-main" class="footer-main">
+			<footer id="footer-main" class="footer-main hide">
 
 			<section class="footer-body  container">
 				
@@ -101,15 +101,20 @@
 
 		</footer>
 
-			<div id="copyright" class="copyright">
+		<div id="copyright" class="copyright">
 				<p class="text-center">All Rights Reserved &copy; <?php echo date('Y'); ?>. <a class="hide" href="www.htmlfivedev.com">HTMLfiveDev.com</a></p>
-			</div>		
-		</div> <!-- FOOTER CONTAINER ENDED -->
+		</div>		
+	</div> <!-- FOOTER CONTAINER ENDED -->
 
 	
 
 	</div> <!-- End of id="content" class="site-content" -->
 </div> <!-- End of id="page" class="site" -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js" type="text/javascript"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
 
 </body>
 </html>
