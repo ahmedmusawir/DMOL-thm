@@ -114,6 +114,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js" type="text/javascript"></script>
 <script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.slimscroll.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
 
 </body>

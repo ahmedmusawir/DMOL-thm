@@ -105,7 +105,7 @@
 
 		<?php elseif ( is_single() ) : ?>
 
-			<section class="dr-nia-single-post-header hide">
+			<section class="dr-nia-single-post-header">
 		
 				<h2><?php wp_title(); ?></h2>
 				
@@ -113,7 +113,7 @@
 
 		<?php else : ?>
 
-			<section class="dr-nia-page-header hide">
+			<section class="dr-nia-page-header">
 		
 				<h1><?php wp_title(); ?></h1>
 				
