@@ -105,15 +105,23 @@
 
 		<?php elseif ( is_single() ) : ?>
 
-			<section class="dr-nia-single-post-header hide">
+			<section class="dr-nia-single-post-header">
 		
 				<h2><?php wp_title(); ?></h2>
 				
 			</section>
 
+		<?php elseif ( is_page(array('news', 'videos')) ) : ?>
+
+			<section class="dr-nia-single-post-header hide">
+		
+				<h2><?php wp_title(); ?></h2>
+				
+			</section>	
+
 		<?php else : ?>
 
-			<section class="dr-nia-page-header hide">
+			<section class="dr-nia-page-header">
 		
 				<h1><?php wp_title(); ?></h1>
 				
