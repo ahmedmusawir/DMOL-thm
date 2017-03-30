@@ -56,7 +56,7 @@ get_header(); ?>
 
 
   <!-- FOR DESKTOPS -->
-  <div id="primary" class="content-area col-md-5 col-lg-5 hidden-sm hidden-xs">
+  <div id="primary" class="content-area col-md-5 col-lg-5 hidden-sm hidden-xs wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
     <main id="main" class="site-main" role="main">
 
 
@@ -106,7 +106,7 @@ get_header(); ?>
     </main><!-- #main -->
   </div><!-- #primary -->
 
-       <div id="right-inner-content-div" class=" col-md-7 col-md-7 hidden-sm hidden-xs"  >
+       <div id="right-inner-content-div" class=" col-md-7 col-md-7 hidden-sm hidden-xs" >
 
            <article >
 

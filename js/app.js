@@ -60,7 +60,7 @@ new Vue ({
 
         console.log("this is id: " + id);
 
-         axios.get('http://dmol.local/wp-json/wp/v2/posts/' + id)
+         axios.get( app.ajax + '/wp-json/wp/v2/posts/' + id)
           .then(function(response) {
             // app.singlePostData = response.data;
             // console.log(response.data.title.rendered);
@@ -96,7 +96,7 @@ new Vue ({
 
         console.log("this is id: " + id);
 
-         axios.get('http://dmol.local/wp-json/wp/v2/posts/' + id)
+         axios.get( app.ajax + '/wp-json/wp/v2/posts/' + id)
           .then(function(response) {
             // app.singlePostData = response.data;
             // console.log(response.data.title.rendered);
@@ -132,7 +132,7 @@ new Vue ({
 
         // console.log("this is id: " + id);
 
-         axios.get('http://dmol.local/wp-json/wp/v2/posts/' + id)
+         axios.get( app.ajax + '/wp-json/wp/v2/posts/' + id)
           .then(function(response) {
             // app.singlePostData = response.data;
             // console.log(response.data.title.rendered);

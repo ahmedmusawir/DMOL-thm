@@ -15,9 +15,8 @@
 get_header(); ?>
 <section class="container">
 <!-- <h1>Im about page</h1> -->
-	<div id="primary" class="content-area col-md-8 col-lg-8">
+	<div id="primary" class="content-area col-md-8 col-lg-8 wow fadeInLeft" data-wow-duration=".6s" data-wow-delay="0s">
 		<main id="main" class="site-main" role="main">
-<!-- <h1>I am work with me</h1> -->
 
 			<?php
 			while ( have_posts() ) : the_post();
@@ -34,7 +33,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<div class="sidebar col-md-4 col-md-4">
+	<div class="sidebar col-md-4 col-md-4 wow fadeInRight" data-wow-duration=".6s" data-wow-delay="0s">
 
 		<?php get_sidebar();  ?>
 		

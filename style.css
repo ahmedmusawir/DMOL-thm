@@ -5935,9 +5935,18 @@ body {
   @media (max-width: 450px) {
     body {
       padding-top: 65px; } }
+  body a {
+    text-decoration: none !important; }
 
+/**
+ *
+ * For Vue Templates Styling
+ *
+ */
 #app {
   margin-top: 5rem; }
+  #app #primary {
+    visibility: hidden; }
   #app #left-inner-content-div {
     padding-bottom: 400px; }
     #app #left-inner-content-div img:hover {
@@ -5996,15 +6005,12 @@ body {
   background-color: #F3918D; }
 
 .navbar-container {
-  overflow-y: hidden;
-  padding: 0 10px 10px 10px;
-  margin: 0 -10px; }
+  overflow-y: hidden; }
 
 .navbar {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: black;
-  margin-bottom: 0;
   font-family: 'Raleway', sans-serif; }
   .navbar .header-social li {
     display: inline-block;
@@ -6124,19 +6130,15 @@ img {
 =            Home page style            =
 =======================================*/
 .above-blog-block-2 {
-  background: url("/wp-content/uploads/2016/10/block2-bg-light.jpg") center center fixed; }
+  margin-bottom: 5rem; }
   .above-blog-block-2 .wrapper {
     padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center; }
-    .above-blog-block-2 .wrapper a {
-      color: #007600; }
-      .above-blog-block-2 .wrapper a:hover, .above-blog-block-2 .wrapper a:active {
-        text-decoration: none;
-        color: #242424; }
     .above-blog-block-2 .wrapper h2 {
       color: #00a900;
       font-size: 3.5rem;
-      font-weight: 700;
+      font-weight: 900;
       padding-top: 4rem;
       padding-bottom: 1.8rem;
       position: relative; }
@@ -6149,83 +6151,98 @@ img {
         width: 40%;
         /* or 100px */
         border-bottom: 0.4rem solid #00a900; }
-    .above-blog-block-2 .wrapper h3 {
-      font-style: italic;
-      font-weight: 600;
-      color: gray; }
-    .above-blog-block-2 .wrapper .icon-content {
-      padding-top: 5rem; }
-      .above-blog-block-2 .wrapper .icon-content img {
-        width: 80%;
-        padding-left: 25%; }
-      .above-blog-block-2 .wrapper .icon-content .text-content {
-        text-align: center;
+    .above-blog-block-2 .wrapper #single-related-post-block {
+      padding-top: 0rem;
+      padding-bottom: 5rem; }
+      .above-blog-block-2 .wrapper #single-related-post-block::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .above-blog-block-2 .wrapper #single-related-post-block h5 {
+        font-size: 1.5rem;
+        font-weight: 900; }
+        .above-blog-block-2 .wrapper #single-related-post-block h5 a {
+          color: #00a900; }
+      .above-blog-block-2 .wrapper #single-related-post-block h4 {
         font-size: 2rem;
-        font-weight: 500;
-        font-style: italic;
-        padding-bottom: 10rem; }
-    .above-blog-block-2 .wrapper figure {
-      -webkit-transition: all 1s ease-in-out;
-      -moz-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out; }
-      .above-blog-block-2 .wrapper figure:hover {
-        margin-top: -25px; }
+        font-weight: 300;
+        text-align: center;
+        color: #00a900;
+        padding-bottom: 3rem; }
+      .above-blog-block-2 .wrapper #single-related-post-block .featured-img {
+        overflow: hidden; }
+        .above-blog-block-2 .wrapper #single-related-post-block .featured-img img {
+          -webkit-transition: all 0.9s ease-in-out;
+          -moz-transition: all 0.9s ease-in-out;
+          transition: all 0.9s ease-in-out; }
+          .above-blog-block-2 .wrapper #single-related-post-block .featured-img img:hover {
+            -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            -ms-transform: translateY(10px);
+            -o-transform: translateY(10px);
+            transform: translateY(10px);
+            -webkit-transform: scale(1.2) rotate(0deg);
+            -moz-transform: scale(1.2) rotate(0deg);
+            -ms-transform: scale(1.2) rotate(0deg);
+            -o-transform: scale(1.2) rotate(0deg);
+            transform: scale(1.2) rotate(0deg);
+            -webkit-transform-origin: center top;
+            -moz-transform-origin: center top;
+            -ms-transform-origin: center top;
+            -o-transform-origin: center top;
+            transform-origin: center top;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            opacity: .5; }
 
 .below-blog-block-1 {
-  min-height: 400px;
-  background-color: #F3918D; }
-  .below-blog-block-1 .wrapper {
-    padding-top: 5rem;
-    padding-bottom: 5rem; }
-    .below-blog-block-1 .wrapper h2 {
-      color: white;
-      font-size: 3.5rem;
-      text-align: center; }
-    .below-blog-block-1 .wrapper h1 {
-      color: #00a900;
-      text-align: center;
-      font-size: 3.5rem;
-      font-weight: 700; }
-    .below-blog-block-1 .wrapper .icon-content figure iframe {
-      padding-bottom: 5rem; }
-    @media (max-width: 768px) {
-      .below-blog-block-1 .wrapper h1 {
-        font-size: 3rem; }
-      .below-blog-block-1 .wrapper h2 {
-        font-size: 3rem; }
-      .below-blog-block-1 .wrapper .icon-content figure img {
-        width: 90%; } }
+  min-height: 600px;
+  background-color: #272d2d;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  .below-blog-block-1 .right-block {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: end; }
+    .below-blog-block-1 .right-block h4 {
+      color: gray;
+      line-height: 3rem;
+      font-size: 2.5rem;
+      font-weight: 300; }
+    .below-blog-block-1 .right-block img {
+      width: 50%; }
+    .below-blog-block-1 .right-block .flex-item {
+      margin: 5rem auto; }
 
 .below-blog-block-2 {
-  padding-top: 5rem; }
-  .below-blog-block-2 .btn-holder {
-    padding-top: 4rem;
-    padding-bottom: 7rem; }
-  .below-blog-block-2 h2 {
-    text-align: center;
-    color: #00a900;
-    font-size: 3.5rem;
-    font-weight: 700;
-    padding-top: 4rem;
-    padding-bottom: 1.8rem;
-    position: relative; }
-    .below-blog-block-2 h2:before {
-      content: "";
-      position: absolute;
-      left: 30%;
-      bottom: 0;
-      height: 1px;
-      width: 40%;
-      /* or 100px */
-      border-bottom: 0.4rem solid #F3918D; }
-  .below-blog-block-2 .icon-content {
-    padding-top: 3rem; }
-  .below-blog-block-2 figure {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
-    .below-blog-block-2 figure:hover {
-      margin-top: -25px; }
+  min-height: 400px; }
 
 /*=====  End of Home page style END  ======*/
 /**
@@ -6378,7 +6395,7 @@ img {
       font-family: 'Raleway', sans-serif;
       font-size: 1.8rem;
       font-variant: 500;
-      color: #646464;
+      color: #627171;
       padding-top: 2rem; }
   .blog-post .entry-footer {
     padding-bottom: 2rem;
@@ -6463,7 +6480,7 @@ img {
     font-family: 'Muli', sans-serif;
     font-size: 1.5rem;
     font-variant: 400;
-    color: #4a4a4a; }
+    color: #4b5656; }
 .single-page #single-post-form {
   width: 100%;
   margin-top: 3rem;
@@ -6620,7 +6637,7 @@ img {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     font-weight: 300;
-    color: #646464;
+    color: #627171;
     padding: 2rem;
     padding-top: 1rem; }
   .praise-block .praise-text h3 {
@@ -6629,7 +6646,7 @@ img {
     font-weight: 700;
     font-size: 2rem;
     font-variant: small-caps;
-    color: #7d7d7d;
+    color: #7a8c8c;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem; }
 
@@ -6658,7 +6675,7 @@ img {
     transition: all 0.6s ease-in-out;
     height: 70px;
     width: 70px;
-    background-color: #242424;
+    background-color: #272d2d;
     border-radius: 50%; }
     .entry-content .contact-top-row .contact-social li i {
       font-size: 2.9rem; }
@@ -6692,7 +6709,7 @@ img {
     color: #F3918D;
     padding-top: 2rem; }
 .entry-content .the-form {
-  background-color: #3e3e3e;
+  background-color: #3f4848;
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin-bottom: 10rem;
@@ -6845,17 +6862,17 @@ img {
     font-size: 3rem;
     font-weight: 500;
     font-variant: small-caps;
-    color: #8a8a8a;
+    color: #889898;
     padding-bottom: 2rem;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif; }
   .widget .srp-post-content {
-    color: #7d7d7d; }
+    color: #7a8c8c; }
   .widget .custom-widget h3 {
-    color: #242424;
+    color: #272d2d;
     text-align: center; }
   .widget .custom-widget h4 {
-    color: #575757;
+    color: #566464;
     text-align: center; }
   .widget .custom-widget img {
     padding-bottom: 2rem;
@@ -7118,7 +7135,179 @@ ol.children {
   background: #84bd68;
   background: #83bc67; }
 
-#portfolio-page-container .portfolio-filter-menu {
-  border: 1px solid red; }
+/**
+ *
+ * Portfolio Styling
+ *
+ */
+#lgx-portfolio .pp-filter-area #pp-filter li {
+  border: 1px solid #cacaca;
+  padding: 1rem; }
+  #lgx-portfolio .pp-filter-area #pp-filter li.active {
+    background: #007600 !important; }
+    #lgx-portfolio .pp-filter-area #pp-filter li.active a {
+      color: #eeeeee !important; }
+
+/*=========================================
+=            DMOL LANDING PAGE            =
+=========================================*/
+.page-id-3335 #front-pg-header {
+  display: none; }
+
+#landing-page-1 {
+  margin-top: 4rem; }
+  @media (min-width: 992px) {
+    #landing-page-1 {
+      margin-top: 100px; } }
+  @media (min-width: 1200px) {
+    #landing-page-1 {
+      margin-top: 80px; } }
+  #landing-page-1 .heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 1rem; }
+  #landing-page-1 .sub-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 2rem; }
+  #landing-page-1 .the-list {
+    list-style-type: circle; }
+    #landing-page-1 .the-list li {
+      padding-bottom: 1.5rem;
+      font-weight: 500; }
+    #landing-page-1 .the-list p {
+      padding-bottom: 1.5rem;
+      font-weight: 500; }
+  #landing-page-1 .the-arrow img {
+    margin-top: -2rem; }
+  #landing-page-1 .right-image {
+    padding-top: 3rem; }
+  #landing-page-1 .btn-holder {
+    margin-top: 6rem; }
+    #landing-page-1 .btn-holder .btn {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      background-color: black;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700; }
+      #landing-page-1 .btn-holder .btn:hover {
+        background-color: gray; }
+  #landing-page-1 .footer {
+    margin-top: 50px;
+    background-color: whitesmoke;
+    padding-top: 3rem;
+    padding-bottom: 5rem; }
+    #landing-page-1 .footer h4 {
+      color: gray;
+      padding-bottom: 2rem; }
+    #landing-page-1 .footer .brag-item {
+      margin-bottom: 2rem; }
+
+/*=====  End of DMOL LANDING PAGE  ======*/
+/*======================================
+=            THANK YOU PAGE            =
+======================================*/
+.page-id-3342 #front-pg-header {
+  display: none; }
+
+#landing-page-thankyou {
+  margin-top: 4rem; }
+  @media (min-width: 992px) {
+    #landing-page-thankyou {
+      margin-top: 100px; } }
+  @media (min-width: 1200px) {
+    #landing-page-thankyou {
+      margin-top: 80px; } }
+  #landing-page-thankyou .heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 1rem; }
+  #landing-page-thankyou .sub-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 2rem; }
+  #landing-page-thankyou .the-list {
+    list-style-type: circle; }
+    #landing-page-thankyou .the-list li {
+      padding-bottom: 1.5rem;
+      font-weight: 500;
+      list-style: none; }
+      #landing-page-thankyou .the-list li a {
+        text-decoration: underline !important;
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-variant: small-caps;
+        color: black; }
+        #landing-page-thankyou .the-list li a:hover {
+          color: #00a900; }
+  #landing-page-thankyou .the-arrow img {
+    margin-top: -2rem; }
+  #landing-page-thankyou .right-image {
+    padding-top: 3rem; }
+  #landing-page-thankyou .btn-holder {
+    margin-top: 6rem; }
+    #landing-page-thankyou .btn-holder .btn {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      background-color: black;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700; }
+      #landing-page-thankyou .btn-holder .btn:hover {
+        background-color: gray; }
+  #landing-page-thankyou .footer {
+    margin-top: 50px;
+    background-color: whitesmoke;
+    padding-top: 3rem;
+    padding-bottom: 5rem; }
+    #landing-page-thankyou .footer h4 {
+      color: gray;
+      padding-bottom: 2rem; }
+    #landing-page-thankyou .footer .brag-item {
+      margin-bottom: 2rem; }
+
+/*=====  End of THANK YOU PAGE  ======*/
+/*=========================================
+=            POPUP OPTIN MODAL            =
+=========================================*/
+#myModal .modal-dialog {
+  padding: 3rem;
+  padding-top: 0rem;
+  background-color: white; }
+#myModal .modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 0px solid #999;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0; }
+#myModal .modal-header {
+  border-bottom: 0px solid black; }
+  #myModal .modal-header .close span {
+    font-size: 50px !important; }
+#myModal .modal-footer {
+  border-top: 0px solid black; }
+#myModal #popup-form-click .progress {
+  height: 7px; }
+#myModal #popup-form-click h1 {
+  font-weight: 700;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  color: black; }
+#myModal #popup-form-click h4 {
+  color: black; }
+#myModal #popup-form-click #wpcf7-f3345-o1 .wpcf7-form-control {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+#myModal #popup-form-click #wpcf7-f3345-o1 input {
+  height: 150%; }
+
+/*=====  End of POPUP OPTIN MODAL  ======*/
 
 /*# sourceMappingURL=style.css.map */

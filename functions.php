@@ -183,7 +183,7 @@ add_action( 'widgets_init', 'moose_frame_widgets_init' );
  * Enqueue scripts and styles.
  */
 function moose_frame_scripts() {
-	wp_enqueue_style( 'moose-frame-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'moose-frame-style', get_stylesheet_uri(), '', '1.0' );
 
 	// wp_enqueue_script( 'moose-frame-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	// wp_enqueue_script( 'janes-ent-jq-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js', array(), '20120206', true );

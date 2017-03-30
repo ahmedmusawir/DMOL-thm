@@ -14,11 +14,11 @@
 
 
 
-		<footer id="copyright" class="copyright  navbar navbar-inverse navbar-fixed-bottom">
+	<footer id="copyright" class="copyright  navbar navbar-inverse navbar-fixed-bottom">
 
-				<p class="text-center">All Rights Reserved &copy; <?php echo date('Y'); ?>. <a class="hide" href="www.htmlfivedev.com">HTMLfiveDev.com</a></p>
+		<p class="text-center">All Rights Reserved &copy; <?php echo date('Y'); ?>. <a class="hide" href="www.htmlfivedev.com">HTMLfiveDev.com</a></p>
 			
-		</footer>>		
+	</footer>		
 
 	
 

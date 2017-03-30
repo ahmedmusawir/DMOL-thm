@@ -209,7 +209,7 @@ $related_post_items = new WP_Query($args);
 
 	<footer class="entry-footer">
 
-	<div id="single-post-nav" class="clearfix">
+	<!-- <div id="single-post-nav" class="clearfix">
 	<hr>
 		<h2 class="pull-left">Prev Post</h2>
 		<i class="fa fa-backward pull-left" aria-hidden="true"></i>
@@ -217,7 +217,7 @@ $related_post_items = new WP_Query($args);
 		<h2 class="pull-right">Next Post</h2>
 		<i class="fa fa-forward pull-right" aria-hidden="true"></i>
 
-	</div>
+	</div> -->
 		<?php moose_frame_entry_footer(); ?>
 	<!-- <hr> -->
 	</footer><!-- .entry-footer -->
