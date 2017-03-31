@@ -1824,7 +1824,8 @@ ol.children { list-style-type: none; }
 =            DMOL LANDING PAGE            =
 =========================================*/
 
-.page-id-3335 {
+.page-id-3335 {   /* LOCAL */
+// .page-id-3356 {
 	
 	#front-pg-header {
 		display: none;
@@ -1895,13 +1896,30 @@ ol.children { list-style-type: none; }
 		padding-top: 3rem;
 		padding-bottom: 5rem;
 
+		// border: 1rem solid brown;
+
 		h4 {
 			color: gray;
 			padding-bottom: 2rem;
 		}
-		.brag-item {
-			margin-bottom: 2rem;
+
+		#FLEX-CONTAINER {
+
+			@include display(flex);
+			@include justify-content(space-around);
+			@include flex-wrap(wrap);
+			// border: 1rem solid red;
+
+
+			margin-bottom: 5rem;
+
+			.brag-item {
+				margin-bottom: 2rem;
+				margin: .5rem;
+			}
+
 		}
+	
 	}
 }
 
@@ -1912,7 +1930,8 @@ ol.children { list-style-type: none; }
 =            THANK YOU PAGE            =
 ======================================*/
 
-.page-id-3342 {
+.page-id-3342 {  /* LOCAL */
+// .page-id-3359 {
 	
 	#front-pg-header {
 		display: none;
@@ -1995,11 +2014,26 @@ ol.children { list-style-type: none; }
 			color: gray;
 			padding-bottom: 2rem;
 		}
-		.brag-item {
-			margin-bottom: 2rem;
-		}
+
+		#FLEX-CONTAINER {
+
+			@include display(flex);
+			@include justify-content(space-around);
+			@include flex-wrap(wrap);
+			// border: 1rem solid red;
+
+
+			margin-bottom: 5rem;
+
+			.brag-item {
+				margin-bottom: 1.5rem;
+				margin: .5rem;
+			}
+
+		}		
 	}
 }
+
 
 /*=====  End of THANK YOU PAGE  ======*/
 
@@ -2034,7 +2068,6 @@ ol.children { list-style-type: none; }
 		.close {
 			span {
 				font-size: 50px !important;
-				// border: 1px solid $tiana-primary;
 			}
 		}
 	}
@@ -2058,7 +2091,8 @@ ol.children { list-style-type: none; }
 			color: black;
 		}
 
-		#wpcf7-f3345-o1 {
+		#wpcf7-f3345-o1 {  /* LOCAL */
+		// #wpcf7-f3362-o1 {
 
 			.wpcf7-form-control {
 				padding-top: 2rem;

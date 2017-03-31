@@ -14,7 +14,13 @@
 
 get_header(); ?>
 
+<?php 
+/* Modal ACF Vars from OPT-IN POPup Page */
 
+$title_headline = get_field('title_headline', 3504);
+$sub_title_text = get_field('sub_title_text', 3504);
+
+?>
 <!-- THE MODAL CODE -->
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -38,9 +44,11 @@ get_header(); ?>
 
             <article class="popup-text">
               
-              <h1 class="text-center">YES! TAKE ME TO FREE DOWNLOADS.</h1>
+              <!-- <h1 class="text-center">YES! TAKE ME TO FREE DOWNLOADS.</h1> -->
+              <h1 class="text-center"><?php echo $title_headline; ?></h1>
 
-              <h4 class="text-center">ENTER YOUR EMAIL ADDRESS BELOW TO START ATTRACTING PERFECT CUSTOMERS.</h4>
+              <!-- <h4 class="text-center">ENTER YOUR EMAIL ADDRESS BELOW TO START ATTRACTING PERFECT CUSTOMERS.</h4> -->
+              <h4 class="text-center"><?php echo $sub_title_text; ?></h4>
 
             </article>
 
@@ -138,66 +146,43 @@ $gray_brag_block_image_6 = get_field('gray_brag_block_image_6');
 
   <article class="footer">
     
+
     <div class="container">
-
-      <h4 class="text-center">As Seen On:</h4>
       
-      <div class="col-sm-2 col-md-2 col-lg-2">
+        <h4 class="text-center">As Seen On:</h4>
 
-        <figure class="brag-item">
+        <div id="FLEX-CONTAINER">
           
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_1; ?>" alt="">
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_1; ?>" alt="">
+              
           
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_2; ?>" alt="">
+              
+          
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_3; ?>" alt="">
+              
+          
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_4; ?>" alt="">
+              
+          
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_5; ?>" alt="">
+              
+          
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_6; ?>" alt="">
+              
+            
+              
+        </div>  <!-- FLEX-CONTAINER END -->
 
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_2; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
 
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_3; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
-
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_4; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
-
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_5; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
-
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_6; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-    
     </div>
+      
 
   </article>  <!-- END OF FOOTER -->  
  

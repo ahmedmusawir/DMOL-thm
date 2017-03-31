@@ -100,7 +100,7 @@ $left_music_dwnld_url_16 = get_field('left_music_dwnld_url_16');
 
         <ul class="the-list">
 
-          <div class="col-sm-6 col-md-6 col-md-6">
+          <div class="col-sm-6 col-md-6 col-md-6 text-center">
 
             <li>
               <a class="" href="<?php echo $left_music_dwnld_url_1; ?>" title=""><?php echo $left_music_dwnld_text_1; ?></a>
@@ -186,66 +186,43 @@ $left_music_dwnld_url_16 = get_field('left_music_dwnld_url_16');
 
   <article class="footer">
     
+
     <div class="container">
-
-      <h4 class="text-center">As Seen On:</h4>
       
-      <div class="col-sm-2 col-md-2 col-lg-2">
+        <h4 class="text-center">As Seen On:</h4>
 
-        <figure class="brag-item">
+        <div id="FLEX-CONTAINER">
           
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_1; ?>" alt="">
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_1; ?>" alt="">
+              
           
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_2; ?>" alt="">
+              
+          
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_3; ?>" alt="">
+              
+          
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_4; ?>" alt="">
+              
+          
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_5; ?>" alt="">
+              
+          
+              
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_6; ?>" alt="">
+              
+            
+              
+        </div>  <!-- FLEX-CONTAINER END -->
 
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_2; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
 
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_3; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
-
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_4; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
-
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_5; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-      <div class="col-sm-2 col-md-2 col-lg-2">
-
-        <figure class="brag-item">
-          
-          <img class="img-responsive center-block" src="<?php echo $gray_brag_block_image_6; ?>" alt="">
-          
-        </figure>  
-      
-      </div>
-    
     </div>
+      
 
   </article>  <!-- END OF FOOTER -->  
  

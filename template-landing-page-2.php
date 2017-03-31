@@ -14,6 +14,13 @@
 
 get_header(); ?>
 
+<?php 
+/* Modal ACF Vars from OPT-IN POPup Page */
+
+$title_headline = get_field('title_headline', 3504);
+$sub_title_text = get_field('sub_title_text', 3504);
+
+?>
 
 <!-- THE MODAL CODE -->
   <!-- Modal -->
@@ -38,9 +45,11 @@ get_header(); ?>
 
             <article class="popup-text">
               
-              <h1 class="text-center">YES! TAKE ME TO FREE DOWNLOADS.</h1>
+              <!-- <h1 class="text-center">YES! TAKE ME TO FREE DOWNLOADS.</h1> -->
+              <h1 class="text-center"><?php echo $title_headline; ?></h1>
 
-              <h4 class="text-center">ENTER YOUR EMAIL ADDRESS BELOW TO START ATTRACTING PERFECT CUSTOMERS.</h4>
+              <!-- <h4 class="text-center">ENTER YOUR EMAIL ADDRESS BELOW TO START ATTRACTING PERFECT CUSTOMERS.</h4> -->
+              <h4 class="text-center"><?php echo $sub_title_text; ?></h4>
 
             </article>
 
