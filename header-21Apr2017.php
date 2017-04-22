@@ -33,16 +33,8 @@
 		<div class="header-logo-social container-fluid">
 			<?php
 			    $front_header_image = get_field('front_header_image', 6); // 1476 is post id                               
-			    $siteLogo = get_field('site_logo', 6); // 1476 is post id   
-
-			    $header_facebook_icon = get_field('header_facebook_icon', 6); // 1476 is post id     
-			    $header_facebook_link = get_field('header_facebook_link', 6);
-			    $header_twitter_icon = get_field('header_twitter_icon', 6);
-			    $header_twitter_link = get_field('header_twitter_link', 6);
-			    $header_linkedin_icon = get_field('header_linkedin_icon', 6);       
-			    $header_linkedin_link = get_field('header_linkedin_link', 6);   
-			    $header_email_icon = get_field('header_email_icon', 6);   
-			    $header_email_link = get_field('header_email_link', 6);             
+			    $siteLogo = get_field('site_logo', 6); // 1476 is post id                               
+			    // $size = 'full'; // (thumbnail, medium, large, full or custom size)
 			?>
 		</div>
 
@@ -62,19 +54,18 @@
 			            <span class="icon-bar"></span>
 			        </button>
 			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><img class="logo img-responsive" src="<?php echo $siteLogo; ?>" alt=""></span> </a>
+			    <!-- <img class="img-responsive" src="http://dmol.local/wp-content/uploads/2015/12/DMOL-Profile-Pic.jpg" alt=""> -->
+			    <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><img class="logo img-responsive img-circle" src="/wp-content/uploads/2015/12/DMOL-Profile-Pic.jpg" alt=""></span> </a> -->
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse navbar-ex1-collapse">
 					
 					<ul class="header-social pull-right">
-						<li><a target="_blank" href="<?php echo $header_facebook_link; ?>" target="_blank"><i class="fa fa-<?php echo $header_facebook_icon; ?> fa-2x"></i></a></li>				
-						<!-- <li><a target="_blank" href="https://www.facebook.com/ina.nozek" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>				 -->
-						<li><a target="_blank" href="<?php echo $header_twitter_link; ?>" target="_blank"><i class="fa fa-<?php echo $header_twitter_icon; ?> fa-2x"></i></a></li>				
-						<!-- <li><a target="_blank" href="https://twitter.com/DoctorIna" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>				 -->
-						<li><a target="_blank" href="<?php echo $header_linkedin_link; ?>" target="_blank"><i class="fa fa-<?php echo $header_linkedin_icon; ?> fa-2x"></i></a></li>				
-						<!-- <li><a target="_blank" href="https://www.linkedin.com/in/inanozek" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>				 -->
-						<li><a target="_blank" href="<?php echo $header_email_link; ?>"><i class="fa fa-<?php echo $header_email_icon; ?> fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://www.facebook.com/ina.nozek" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://twitter.com/DoctorIna" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://www.linkedin.com/in/inanozek" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>				
+						<li><a target="_blank" href="/contact-me"><i class="fa fa-envelope fa-2x"></i></a></li>				
 					</ul>
 
 			    	

@@ -153,29 +153,30 @@ $gray_brag_block_image_6 = get_field('gray_brag_block_image_6');
 
         <div id="FLEX-CONTAINER">
           
-              
+
+          <?php if( get_field('gray_brag_block_image_1') ): ?>    
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_1; ?>" alt="">
-              
+          <?php endif; ?>    
           
-              
+          <?php if( get_field('gray_brag_block_image_2') ): ?>    
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_2; ?>" alt="">
-              
+          <?php endif; ?>    
           
-              
+          <?php if( get_field('gray_brag_block_image_3') ): ?>    
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_3; ?>" alt="">
-              
+          <?php endif; ?>    
           
-              
+          <?php if( get_field('gray_brag_block_image_4') ): ?>    
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_4; ?>" alt="">
-              
+          <?php endif; ?>    
           
-              
+          <?php if( get_field('gray_brag_block_image_5') ): ?>    
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_5; ?>" alt="">
-              
+          <?php endif; ?>    
           
-              
+          <?php if( get_field('gray_brag_block_image_6') ): ?>    
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_6; ?>" alt="">
-              
+          <?php endif; ?>    
             
               
         </div>  <!-- FLEX-CONTAINER END -->

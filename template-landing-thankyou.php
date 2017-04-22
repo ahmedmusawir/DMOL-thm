@@ -192,32 +192,46 @@ $left_music_dwnld_url_16 = get_field('left_music_dwnld_url_16');
         <h4 class="text-center">As Seen On:</h4>
 
         <div id="FLEX-CONTAINER">
-          
-              
+
+
+          <?php if( get_field('gray_brag_block_image_1') ): ?>    
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_1; ?>" alt="">
-              
+          <?php endif; ?>    
           
+          <?php if( get_field('gray_brag_block_image_2') ): ?>    
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_2; ?>" alt="">
+          <?php endif; ?>    
+          
+          <?php if( get_field('gray_brag_block_image_3') ): ?>    
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_3; ?>" alt="">
+          <?php endif; ?>    
+          
+          <?php if( get_field('gray_brag_block_image_4') ): ?>    
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_4; ?>" alt="">
+          <?php endif; ?>    
+          
+          <?php if( get_field('gray_brag_block_image_5') ): ?>    
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_5; ?>" alt="">
+          <?php endif; ?>    
+          
+          <?php if( get_field('gray_brag_block_image_6') ): ?>    
+              <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_6; ?>" alt="">
+          <?php endif; ?>             
+              
+             <!--  <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_1; ?>" alt="">
               
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_2; ?>" alt="">
               
-          
-              
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_3; ?>" alt="">
-              
-          
               
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_4; ?>" alt="">
               
-          
-              
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_5; ?>" alt="">
-              
-          
               
               <img class="img-responsive center-block brag-item" src="<?php echo $gray_brag_block_image_6; ?>" alt="">
               
             
-              
+               -->
         </div>  <!-- FLEX-CONTAINER END -->
 
 

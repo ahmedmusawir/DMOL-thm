@@ -9,6 +9,8 @@ $tiana-light-gray: #f9fbfc;
 $tiana-red: #bb324a;
 
 
+
+
 @import "bourbon/bourbon";
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
@@ -137,6 +139,9 @@ body {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
+
+	  // border: 1rem solid red;
+	  margin-bottom: 6rem;
 
 	// display: none;
 }
@@ -427,7 +432,6 @@ img {
 
 		}
 		#single-related-post-block {
-			// border: 1rem solid red;
 			@include clearfix();
 
 
@@ -452,6 +456,8 @@ img {
 			.featured-img {
 
 				overflow: hidden;
+				// border: 1rem solid blue;
+
 
 				img {
 					@include transition(all .9s ease-in-out);
@@ -462,6 +468,11 @@ img {
 						@include transform-origin(center top);
 						@include transform-style(preserve-3d);
 						opacity: .5;
+					}
+
+					@media (max-width: 800px) {
+						width: 100%;
+						// border: 1rem solid red;
 					}
 				}
 			}
@@ -484,26 +495,19 @@ img {
 
 	.right-block {
 
-		margin-top: 5rem;
+		// margin-top: 2rem;
 
 		@include display(flex);
 		@include flex-direction(column);
 		@include justify-content(flex-end);
 
-		h4 {
+		h1,h2,h3,h4,h5,h6,p,ul,li {
 			color: gray;
-			line-height: 3rem;
-			font-size: 2.5rem;
-			font-weight: 300;
+			// line-height: 3rem;
+			// font-size: 2.5rem;
+			// font-weight: 300;
 		}
-		img {
-			width: 50%;
-		}
-
-		.flex-item {
-			margin: 5rem auto;
-			// border: 4px solid red;
-		}
+		
 	}
 
 	
@@ -1012,6 +1016,10 @@ img {
 					@include transform-origin(center top);
 					@include transform-style(preserve-3d);
 					opacity: .5;
+				}
+				@media (max-width: 800px) {
+					width: 100%;
+					// border: 1rem solid red;
 				}
 			}
 		}
@@ -1818,325 +1826,10 @@ ol.children { list-style-type: none; }
 	}
 }
 
-
-
-/*=========================================
-=            DMOL LANDING PAGE            =
-=========================================*/
-
-.page-id-3335 {   /* LOCAL */
-// .page-id-3356 {
-	
-	#front-pg-header {
-		display: none;
-	}
-}
-
-#landing-page-1 {
-
-	margin-top: 4rem;
-
-	@media (min-width: 992px) {
-		margin-top: 100px;
-	}
-	@media (min-width: 1200px) {
-		margin-top: 80px;
-	}
-
-	.heading {
-		font-size: 2.8rem;
-		font-weight: 700;
-		padding-top: 3rem;
-		padding-bottom: 1rem;
-	}
-	.sub-heading {
-		font-size: 1.8rem;
-		font-weight: 700;
-		padding-bottom: 2rem;
-	}
-	.the-list {
-		list-style-type: circle;
-
-		li {
-			padding-bottom: 1.5rem;
-			font-weight: 500;
-		}
-		p {
-			padding-bottom: 1.5rem;
-			font-weight: 500;
-		}
-	}
-	.the-arrow {
-		img {
-			margin-top: -2rem;
-		}
-	}
-	.right-image {
-		padding-top: 3rem;
-	}
-	.btn-holder {
-		margin-top: 6rem;
-
-		.btn {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			background-color: black;
-			color: white;
-			font-size: 1.5rem;
-			font-weight: 700;
-
-			&:hover {
-				background-color: gray;
-			}
-		}
-	}
-	.footer {
-		margin-top: 50px;
-		background-color: whitesmoke;
-		padding-top: 3rem;
-		padding-bottom: 5rem;
-
-		// border: 1rem solid brown;
-
-		h4 {
-			color: gray;
-			padding-bottom: 2rem;
-		}
-
-		#FLEX-CONTAINER {
-
-			@include display(flex);
-			@include justify-content(space-around);
-			@include flex-wrap(wrap);
-			// border: 1rem solid red;
-
-
-			margin-bottom: 5rem;
-
-			.brag-item {
-				margin-bottom: 2rem;
-				margin: .5rem;
-			}
-
-		}
-	
-	}
-}
-
-/*=====  End of DMOL LANDING PAGE  ======*/
-
-
-/*======================================
-=            THANK YOU PAGE            =
-======================================*/
-
-.page-id-3342 {  /* LOCAL */
-// .page-id-3359 {
-	
-	#front-pg-header {
-		display: none;
-	}
-}
-
-#landing-page-thankyou {
-
-	margin-top: 4rem;
-
-	@media (min-width: 992px) {
-		margin-top: 100px;
-	}
-	@media (min-width: 1200px) {
-		margin-top: 80px;
-	}
-
-	.heading {
-		font-size: 2.8rem;
-		font-weight: 700;
-		padding-top: 3rem;
-		padding-bottom: 1rem;
-	}
-	.sub-heading {
-		font-size: 1.8rem;
-		font-weight: 700;
-		padding-bottom: 2rem;
-	}
-	.the-list {
-		list-style-type: circle;
-
-		li {
-			padding-bottom: 1.5rem;
-			font-weight: 500;
-			list-style: none;
-
-			a {
-				text-decoration: underline !important;
-				font-size: 1.8rem;
-				font-weight: 700;
-				font-variant: small-caps;
-				color: black;
-				&:hover {
-					color: $tiana-primary;
-				}
-			}
-		}
-	}
-	.the-arrow {
-		img {
-			margin-top: -2rem;
-		}
-	}
-	.right-image {
-		padding-top: 3rem;
-	}
-	.btn-holder {
-		margin-top: 6rem;
-
-		.btn {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			background-color: black;
-			color: white;
-			font-size: 1.5rem;
-			font-weight: 700;
-
-			&:hover {
-				background-color: gray;
-			}
-		}
-	}
-	.footer {
-		margin-top: 50px;
-		background-color: whitesmoke;
-		padding-top: 3rem;
-		padding-bottom: 5rem;
-
-		h4 {
-			color: gray;
-			padding-bottom: 2rem;
-		}
-
-		#FLEX-CONTAINER {
-
-			@include display(flex);
-			@include justify-content(space-around);
-			@include flex-wrap(wrap);
-			// border: 1rem solid red;
-
-
-			margin-bottom: 5rem;
-
-			.brag-item {
-				margin-bottom: 1.5rem;
-				margin: .5rem;
-			}
-
-		}		
-	}
-}
-
-
-/*=====  End of THANK YOU PAGE  ======*/
-
-/*=========================================
-=            POPUP OPTIN MODAL            =
-=========================================*/
-
-#myModal {
-
-	// padding: 3rem;
-	.modal-dialog {
-		padding: 3rem;
-		padding-top: 0rem;
-		// border: 1rem solid red;
-		background-color: white;
-	}
-	.modal-content {
-	    position: relative;
-	    background-color: #fff;
-	    border: 0px solid #999;
-	    border: 0px solid rgba(0, 0, 0, 0.2);
-	    border-radius: 0px;
-	    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
-	    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
-	    background-clip: padding-box;
-	    outline: 0;
-	}	
-
-	.modal-header {
-
-		border-bottom: 0px solid black;
-		.close {
-			span {
-				font-size: 50px !important;
-			}
-		}
-	}
-	.modal-footer {
-		border-top: 0px solid black;
-	}
-
-	#popup-form-click {
-
-		.progress {
-			height: 7px;
-		}
-
-		h1 {
-			font-weight: 700;
-			padding-top: 3.5rem;
-			padding-bottom: 2rem;
-			color: black;
-		}
-		h4 {
-			color: black;
-		}
-
-		#wpcf7-f3345-o1 {  /* LOCAL */
-		// #wpcf7-f3362-o1 {
-
-			.wpcf7-form-control {
-				padding-top: 2rem;
-				padding-bottom: 2rem;
-
-			}
-			input {
-				height: 150%;
-			}
-		}
-	}
-}
-
-/*=====  End of POPUP OPTIN MODAL  ======*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ *
+ * Landing Page and Thankyou Page Styles From a Separate File
+ *
+ */
+@import url(style-landing.css);
 

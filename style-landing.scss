@@ -1,0 +1,353 @@
+// .page-id-3356  /* Laning Main */
+// .page-id-3359 /* Thankyou */
+
+@import "_scss/bourbon/bourbon";
+
+$tiana-primary: lighten( green, 8% );
+
+$LANDING-PG-ID-LOCAL: "3335";
+$THANK-PG-ID-LOCAL: "3342";
+
+$LANDING-PG-ID-PROD: "3356";
+$THANK-PG-ID-PROD: "3359";
+
+$CONTACT7-LOCAL: "#wpcf7-f3345-o1";
+$CONTACT7-PROD: "#wpcf7-f3362-o1";
+
+/*=========================================
+=            DMOL LANDING PAGE            =
+=========================================*/
+
+ .page-id-#{$LANDING-PG-ID-PROD} {  
+	
+	#front-pg-header {
+		display: none;
+	}
+}
+
+#landing-page-1 {
+
+	margin-top: 4rem;
+
+	@media (min-width: 992px) {
+		margin-top: 100px;
+	}
+	@media (min-width: 1200px) {
+		margin-top: 80px;
+	}
+
+	.heading {
+		font-size: 2.8rem;
+		font-weight: 700;
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+	}
+	.sub-heading {
+		font-size: 1.8rem;
+		font-weight: 700;
+		padding-bottom: 2rem;
+	}
+	.the-list {
+		list-style-type: circle;
+
+		li {
+			padding-bottom: 1.5rem;
+			font-weight: 500;
+		}
+		p {
+			padding-bottom: 1.5rem;
+			font-weight: 500;
+		}
+	}
+	.the-arrow {
+		img {
+			margin-top: -2rem;
+		}
+	}
+	.right-image {
+		padding-top: 3rem;
+	}
+	.btn-holder {
+		margin-top: 6rem;
+
+		.btn {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			background-color: black;
+			color: white;
+			font-size: 1.5rem;
+			font-weight: 700;
+
+			&:hover {
+				background-color: gray;
+			}
+
+			@media (max-width: 450px) {
+				font-size: 1rem;
+			}
+		}
+	}
+	.footer {
+		margin-top: 50px;
+		background-color: whitesmoke;
+		padding-top: 3rem;
+		padding-bottom: 5rem;
+
+		// border: 1rem solid brown;
+
+		h4 {
+			color: gray;
+			padding-bottom: 2rem;
+		}
+
+		#FLEX-CONTAINER {
+
+			@include display(flex);
+			@include justify-content(space-around);
+			@include flex-wrap(wrap);
+			// border: 1rem solid red;
+
+
+			margin-bottom: 5rem;
+
+			.brag-item {
+				margin-bottom: 2rem;
+				margin: .5rem;
+			}
+
+		}
+	
+	}
+}
+
+/*=====  End of DMOL LANDING PAGE  ======*/
+
+
+/*======================================
+=            THANK YOU PAGE            =
+======================================*/
+
+.page-id-#{$THANK-PG-ID-PROD} {  
+	
+	#front-pg-header {
+		display: none;
+	}
+}
+
+#landing-page-thankyou {
+
+	margin-top: 4rem;
+
+	@media (min-width: 992px) {
+		margin-top: 100px;
+	}
+	@media (min-width: 1200px) {
+		margin-top: 80px;
+	}
+
+	.heading {
+		font-size: 2.8rem;
+		font-weight: 700;
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+	}
+	.sub-heading {
+		font-size: 1.8rem;
+		font-weight: 700;
+		padding-bottom: 2rem;
+	}
+	.the-list {
+		list-style-type: circle;
+
+		li {
+			padding-bottom: 1.5rem;
+			font-weight: 500;
+			list-style: none;
+
+			a {
+				text-decoration: underline !important;
+				font-size: 1.8rem;
+				font-weight: 700;
+				font-variant: small-caps;
+				color: black;
+				&:hover {
+					color: $tiana-primary;
+				}
+			}
+		}
+	}
+	.the-arrow {
+		img {
+			margin-top: -2rem;
+		}
+	}
+	.right-image {
+		padding-top: 3rem;
+	}
+	.btn-holder {
+		margin-top: 6rem;
+
+		.btn {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			background-color: black;
+			color: white;
+			font-size: 1.5rem;
+			font-weight: 700;
+
+			&:hover {
+				background-color: gray;
+			}
+
+			@media (max-width: 450px) {
+				font-size: 1rem;
+			}
+		}
+	}
+	.footer {
+		margin-top: 50px;
+		background-color: whitesmoke;
+		padding-top: 3rem;
+		padding-bottom: 5rem;
+
+		h4 {
+			color: gray;
+			padding-bottom: 2rem;
+		}
+
+		#FLEX-CONTAINER {
+
+			@include display(flex);
+			@include justify-content(space-around);
+			@include flex-wrap(wrap);
+			// border: 1rem solid red;
+
+
+			margin-bottom: 5rem;
+
+			.brag-item {
+				margin-bottom: 1.5rem;
+				margin: .5rem;
+			}
+
+		}		
+	}
+}
+
+
+/*=====  End of THANK YOU PAGE  ======*/
+
+/*=========================================
+=            POPUP OPTIN MODAL            =
+=========================================*/
+
+#myModal {
+
+	// padding: 3rem;
+	.modal-dialog {
+		padding: 3rem;
+		padding-top: 0rem;
+		// border: 1rem solid red;
+		background-color: white;
+	}
+	.modal-content {
+	    position: relative;
+	    background-color: #fff;
+	    border: 0px solid #999;
+	    border: 0px solid rgba(0, 0, 0, 0.2);
+	    border-radius: 0px;
+	    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+	    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+	    background-clip: padding-box;
+	    outline: 0;
+	}	
+
+	.modal-header {
+
+		border-bottom: 0px solid black;
+		.close {
+			span {
+				font-size: 50px !important;
+			}
+		}
+	}
+	.modal-footer {
+		border-top: 0px solid black;
+	}
+
+	#popup-form-click {
+
+		.progress {
+			height: 7px;
+		}
+
+		h1 {
+			font-weight: 700;
+			padding-top: 3.5rem;
+			padding-bottom: 2rem;
+			color: black;
+
+			@media (max-width: 450px) {
+				font-size: 2rem;
+			}
+		}
+		h4 {
+			color: black;
+		}
+
+		#{$CONTACT7-PROD} {  
+
+			.wpcf7-form-control {
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+
+			}
+
+			.wpcf7-submit {
+				// color: red;
+				@media (max-width: 450px) {
+					font-size: 1rem;
+				}
+			}
+
+			input {
+				height: 150%;
+			}
+		}
+	}
+}
+
+/*=====  End of POPUP OPTIN MODAL  ======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

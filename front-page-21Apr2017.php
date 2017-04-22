@@ -1,7 +1,7 @@
 <?php
 /**
  * The main template file.
- * Template Name: Home Template
+ * Template Name: Blog Template
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
@@ -16,25 +16,13 @@
 
 get_header(); ?>
 
-<?php 
-
-/* Home ACF Variables */
-$home_portfolio_headline = get_field('home_portfolio_headline', 6);
-$home_portfolio_subheadline = get_field('home_portfolio_subheadline', 6);
-$home_portfolio_btn_text = get_field('home_portfolio_btn_text', 6);
-$home_portfolio_btn_link = get_field('home_portfolio_btn_link', 6);
-/* Bottom Dark Block */
-$left_image_link = get_field('left_image_link', 6);
-$right_text_pane = get_field('right_text_pane', 6);
-
-?>
 
 <section class="above-blog-block-2">
 
 	<div class="wrapper container-fluid">
 		
 		
-		<h2><?php echo $home_portfolio_headline; ?></h2>
+		<h2>LATEST MUSIC</h2>
 
 	
 
@@ -62,8 +50,7 @@ $right_text_pane = get_field('right_text_pane', 6);
 					
 			<article class="post-content">
 
-			<h4><?php echo $home_portfolio_subheadline; ?>	</h4>
-			<!-- <h4>Here’s an overview of all the tracks, remixes, and other releases DOML brought to life.	</h4> -->
+			<h4>Here’s an overview of all the tracks, remixes, and other releases DOML brought to life.	</h4>
 
 			<?php if ( $related_post_items->have_posts() ) : ?>
 				<?php while ( $related_post_items->have_posts() ) : $related_post_items->the_post(); ?>					
@@ -87,6 +74,7 @@ $right_text_pane = get_field('right_text_pane', 6);
 						<?php endif; ?>		
 
 					
+						<!-- <img class="img-responsive" src="/wp-content/uploads/2016/06/TianaNEWJuneBlock_no-featured-version.jpg" alt=""> -->
 						<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
 					</div>
 							
@@ -101,8 +89,8 @@ $right_text_pane = get_field('right_text_pane', 6);
 			</article>
 
 		</section>	<!-- END SINGLE RELATED POST BLOCK -->	
-		<a class="btn btn-success btn-lg" href="<?php echo $home_portfolio_btn_link; ?>">
-			<?php echo $home_portfolio_btn_text; ?>
+		<a class="btn btn-success btn-lg" href="/music/">
+			MORE MUSIC
 		</a>
 
 	</div> <!-- END WRAPPER -->
@@ -114,15 +102,29 @@ $right_text_pane = get_field('right_text_pane', 6);
 	<div class="wrapper container-fluid">
 
 		<article class="col-sm-7 col-md-7 col-lg-7 left-block" >
-			<img class="img-responsive center-block" src="<?php echo $left_image_link; ?>" alt="">
+			<img class="img-responsive center-block" src="/wp-content/uploads/2016/12/block2-800x800.jpg" alt="">
 		</article>
 
 		<article class="col-sm-5 col-md-5 col-lg-5">
 
-			<div class="right-block">		
+			<div class="right-block">			
+				<h4 class="">
+					DJ and producer DMOL is a born perfectionist. His five-time number one position in the critically acclaimed DJ Mag Top 100 DJs Poll has been the result of his loyalty to fans, his creativity in the studio, the perseverance with which he hosts his weekly radio show ‘A State of Trance’, and the energy he brings to the crowds in front of him. Despite the heavy pressure that comes along with being one of the world’s most popular DJs, DMOL has always kept his focus on the music. And that’s exactly what keeps him going.
+				</h4>
 
-				<?php echo $right_text_pane; ?>				
-				
+				<!-- <figure class="img-block flex-item">
+					
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<img class="img-responsive" src="http://dmol.local/wp-content/uploads/2016/12/symbol-1-400.jpg" alt="">
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<img class="img-responsive" src="http://dmol.local/wp-content/uploads/2016/12/symbol-2-400.jpg" alt="">
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<img class="img-responsive" src="http://dmol.local/wp-content/uploads/2016/12/symbol-3-400.jpg" alt="">
+					</div>
+					
+				</figure> -->
 			</div>
 
 		</article>
@@ -133,7 +135,16 @@ $right_text_pane = get_field('right_text_pane', 6);
 
 </section>
 
+<!-- <section class="below-blog-block-2 hide">
 
+	<div class="wrapper container-fluid">
+		
+
+
+
+	</div>
+	
+</section> -->
 <?php
 
 get_footer();
